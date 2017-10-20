@@ -83,7 +83,8 @@ pre {
   }
 }
 
-tr:hover {
+tr:hover, td:hover {
   background-color: #1EAEDB;
   color: #f5f5f5;
+  cursor: pointer;
 }
