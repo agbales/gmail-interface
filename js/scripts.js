@@ -148,8 +148,8 @@ function openMessage(message) {
 
   fillInReply(reply_to, reply_subject, messageId);
 
-  $("#message-from").text(reply_to);
-  $("#message-subject").text(reply_subject);
+  $("#message-from").text(getHeader(message.payload.headers, 'Reply-to'));
+  $("#message-subject").text(getHeader(message.payload.headers, 'Subject'));
   $("#message-text").html(getBody(message.payload));
   $("#message-overlay").css("height", "100%");
 }
