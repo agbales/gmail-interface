@@ -8,6 +8,10 @@ Run a local server (ex: python -m SimpleHTTPServer), open index.html, and authen
 
 ### Mockups
 
+Inbox:
+
 ![inbox](https://raw.githubusercontent.com/agbales/gmail-interface/master/images/inbox.png)
+
+Compose:
 
 ![compose](https://raw.githubusercontent.com/agbales/gmail-interface/master/images/compose.png)
