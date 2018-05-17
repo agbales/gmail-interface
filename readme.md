@@ -10,4 +10,4 @@ Run a local server (ex: python -m SimpleHTTPServer), open index.html, and authen
 
 ![inbox](https://raw.githubusercontent.com/agbales/gmail-interface/master/images/inbox.png)
 
-![compose][https://raw.githubusercontent.com/agbales/gmail-interface/master/images/compose.png]
+![compose](https://raw.githubusercontent.com/agbales/gmail-interface/master/images/compose.png)
