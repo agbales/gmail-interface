@@ -137,7 +137,31 @@ $("#inbox").on("click", "tr", function(){
     'format': "full"
   });
   request.execute(openMessage);
+
+  // testing thread--
+  request.execute(getThread);
+  //---//
 });
+
+
+// ---- test THREAD -- this section and request in function above
+function getThread(th) {
+  var threadId = th.threadId;
+  var request = gapi.client.gmail.users.threads.get({
+    'userId': 'me',
+    'id': threadId
+  });
+  request.execute(logit);
+}
+function logit(thingy) {
+  var thread = thingy;
+  for (var i=0; i<= thread.messages.length; i++) {
+    console.log(i + "-->", getBody(thread.messages[i].payload));
+  }
+}
+//------//
+
+
 
 function openMessage(message) {
   var reply_to = (getHeader(message.payload.headers, 'Reply-to') !== '' ?
